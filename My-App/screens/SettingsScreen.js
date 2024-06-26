@@ -49,6 +49,7 @@ const SettingsScreen = ({ navigation }) => {
         {['Language', 'My Profile', 'Contact Us', 'Change Password', 'Privacy Policy'].map((item, index) => (
           <View key={index} style={styles.setting}>
             <Text style={[styles.settingText, isDarkTheme && styles.darkText]}>{item}</Text>
+            <Icon name='chevron-right' type='font-awesome' size={18} color={isDarkTheme ? '#fff' : '#000'} />
           </View>
         ))}
         <View style={styles.set}>
